@@ -1,4 +1,4 @@
-import type { WT } from '$lib/server/streaming/logic';
+import type { WT } from '$lib/server/streaming/types';
 import type { KeywordMessage } from './messages';
 import type { TranscriptDelta } from './transcripts';
 

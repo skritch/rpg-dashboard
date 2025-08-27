@@ -1,12 +1,12 @@
 import { describe, expect, it, beforeEach } from 'vitest';
 import { AudioPipeline } from './AudioPipeline';
-import { outputPathsFromEnv } from '../paths';
+import { outputPathsFromEnv } from './paths';
 import { AUDIO_CONFIG } from '$lib/shared/AudioConfig';
-import { MockTsService } from '../transcription/MockTsService';
+import { MockTsService } from './transcription/MockTsService';
 import type { TranscriptDeltaMessage, TranscriptionErrorMessage } from '$lib/shared/messages';
-import { KeywordSpotter } from '../keywords/KeywordSpotter';
-import { getKeywordDatabase } from '../keywords';
-import type { WT } from './logic';
+import { KeywordSpotter } from './keywords/KeywordSpotter';
+import { getKeywordDatabase } from './keywords';
+import type { WT } from './streaming/types';
 
 function createTestAudioSegments(count: number): ArrayBuffer[] {
 	const segments: ArrayBuffer[] = [];

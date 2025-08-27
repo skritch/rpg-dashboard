@@ -1,6 +1,6 @@
 import type { TranscriptDelta } from '$lib/shared/transcripts';
 import type { TranscriptionSegment } from '$lib/shared/messages';
-import type { WhisperTranscript } from '../transcription';
+import type { WhisperTranscript } from '.';
 
 /**
  * Apply offset and cutoff logic to a raw transcript.

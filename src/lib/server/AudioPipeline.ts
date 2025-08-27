@@ -12,7 +12,7 @@ import {
 	createTranscriptionService,
 	STREAMING_CONFIG,
 	type TranscriptionService
-} from '../transcription';
+} from './transcription';
 import type {
 	KeywordMessage,
 	TranscriptDeltaMessage,
@@ -20,27 +20,30 @@ import type {
 } from '$lib/shared/messages';
 import { tapToFile, tapToFileJson1 } from '$lib/server/streaming/operators';
 import {
-	dsToTranscript,
-	errWithWindowToMessage,
 	keywordSpottingLogic,
 	parseLogic,
 	transcriptionLogic,
+	windowLogic,
+	keywordDedupeLogic,
+	wavHeader
+} from './streaming/logic';
+import {
+	dsToTranscript,
+	errWithWindowToMessage,
 	tdToMessage,
 	tdToRow,
-	windowLogic,
 	type DeltaState,
 	type WT,
 	kwmToRow,
-	keywordDedupeLogic,
-	wavHeader,
 	type AudioSegment
-} from './logic';
-import { deltaLogic, type TD } from './logic';
-import { KeywordSpotter } from '../keywords/KeywordSpotter';
+} from './streaming/types';
+import { deltaLogic } from './streaming/logic';
+import { type TD } from './streaming/types';
+import { KeywordSpotter } from './keywords/KeywordSpotter';
 import { type ClientSettings } from '$lib/shared/settings';
-import { KeywordDatabase } from '../keywords/KeywordDatabase';
-import type { PCMData } from '../audio';
-import { outputPathsFromEnv, type TranscriptOutputPaths } from '../paths';
+import { KeywordDatabase } from './keywords/KeywordDatabase';
+import type { PCMData } from './audio';
+import { outputPathsFromEnv, type TranscriptOutputPaths } from './paths';
 
 const shareReplayConfig: ShareReplayConfig = {
 	windowTime: STREAMING_CONFIG.windowMs,

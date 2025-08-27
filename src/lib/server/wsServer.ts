@@ -1,7 +1,7 @@
 import { WebSocketServer } from 'ws';
 import type { WebSocket } from 'ws';
 import type { WSServerMessage } from '$lib/shared/messages.js';
-import { AudioPipeline } from './streaming/AudioPipeline.js';
+import { AudioPipeline } from './AudioPipeline.js';
 import { appState, updateSettings } from './state.js';
 import { parseArrayBuffer } from '$lib/shared/utils.js';
 import { DEFAULT_SETTINGS } from '$lib/shared/settings.js';

@@ -1,8 +1,9 @@
 import { writeFileSync } from 'fs';
 import { firstValueFrom, lastValueFrom, Observable, of } from 'rxjs';
 import { filter, map, toArray } from 'rxjs/operators';
-import { deltaLogic, tdToRow } from '$lib/server/streaming/logic';
-import type { TD, WT } from '../src/lib/server/streaming/logic';
+import { deltaLogic } from '$lib/server/streaming/logic';
+import { tdToRow } from '$lib/server/streaming/types';
+import type { TD, WT } from '$lib/server/streaming/types';
 import type { TranscriptionResultRow } from '../src/lib/shared/files';
 import { loadJson1 } from '../src/lib/shared/utils';
 

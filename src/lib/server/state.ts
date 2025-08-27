@@ -1,5 +1,5 @@
 import { DEFAULT_SETTINGS, type ClientSettings } from '../shared/settings.js';
-import type { AudioPipeline } from './streaming/AudioPipeline.js';
+import type { AudioPipeline } from './AudioPipeline.js';
 import { createTranscriptionService } from './transcription/TranscriptionService.js';
 
 export interface AppState {

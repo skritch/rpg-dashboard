@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { firstValueFrom, Observable, of } from 'rxjs';
 import { map, toArray } from 'rxjs/operators';
-import { deltaLogic } from './logic';
-import type { TD, WindowMeta, WT } from './logic';
+import { deltaLogic } from '../streaming/logic';
+import type { TD, WindowMeta, WT } from '../streaming/types';
 import type { TranscriptDelta } from '$lib/shared/transcripts';
 import { join } from 'path';
 import { loadJson1 } from '$lib/shared/utils';

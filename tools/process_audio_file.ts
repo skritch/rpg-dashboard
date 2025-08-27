@@ -2,7 +2,7 @@
 
 import { spawn } from 'child_process';
 import { basename, extname } from 'path';
-import { AudioPipeline } from '../src/lib/server/streaming/AudioPipeline.js';
+import { AudioPipeline } from '../src/lib/server/AudioPipeline.js';
 import { AUDIO_CONFIG } from '../src/lib/shared/AudioConfig.js';
 import type { ClientSettings } from '$lib/shared/settings.js';
 
