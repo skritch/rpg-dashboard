@@ -1,0 +1,1225 @@
+{
+	"Equipment": {
+		"Club": {
+			"priority": "low"
+		},
+		"Dagger": {
+			"priority": "low"
+		},
+		"Greatclub": {
+			"priority": "low"
+		},
+		"Handaxe": {
+			"priority": "low"
+		},
+		"Javelin": {
+			"priority": "low"
+		},
+		"Light hammer": {
+			"priority": "low"
+		},
+		"Mace": {
+			"priority": "low"
+		},
+		"Quarterstaff": {
+			"priority": "low"
+		},
+		"Sickle": {
+			"priority": "low"
+		},
+		"Spear": {
+			"priority": "low"
+		},
+		"Crossbow, light": {
+			"priority": "low",
+			"alias": "Light Crossbow"
+		},
+		"Dart": {
+			"priority": "low"
+		},
+		"Shortbow": {
+			"priority": "low"
+		},
+		"Sling": {
+			"priority": "low"
+		},
+		"Battleaxe": {
+			"priority": "low"
+		},
+		"Flail": {
+			"priority": "low"
+		},
+		"Glaive": {
+			"priority": "low"
+		},
+		"Greataxe": {
+			"priority": "low"
+		},
+		"Greatsword": {
+			"priority": "low"
+		},
+		"Halberd": {
+			"priority": "low"
+		},
+		"Lance": {
+			"priority": "low"
+		},
+		"Longsword": {
+			"priority": "low"
+		},
+		"Maul": {
+			"priority": "low"
+		},
+		"Morningstar": {
+			"priority": "low"
+		},
+		"Pike": {
+			"priority": "low"
+		},
+		"Rapier": {
+			"priority": "low"
+		},
+		"Scimitar": {
+			"priority": "low"
+		},
+		"Shortsword": {
+			"priority": "low"
+		},
+		"Trident": {
+			"priority": "low"
+		},
+		"War pick": {
+			"priority": "low"
+		},
+		"Warhammer": {
+			"priority": "low"
+		},
+		"Whip": {
+			"priority": "low"
+		},
+		"Blowgun": {
+			"priority": "low"
+		},
+		"Crossbow, hand": {
+			"priority": "low",
+			"alias": "Hand Crossbow"
+		},
+		"Crossbow, heavy": {
+			"priority": "low",
+			"alias": "Heavy Crossbow"
+		},
+		"Longbow": {
+			"priority": "low"
+		},
+		"Net": {
+			"priority": "high"
+		},
+		"Padded Armor": {
+			"priority": "low"
+		},
+		"Leather Armor": {
+			"priority": "low"
+		},
+		"Studded Leather Armor": {
+			"priority": "low"
+		},
+		"Hide Armor": {
+			"priority": "low"
+		},
+		"Chain Shirt": {
+			"priority": "low"
+		},
+		"Scale Mail": {
+			"priority": "low"
+		},
+		"Breastplate": {
+			"priority": "low"
+		},
+		"Half Plate Armor": {
+			"priority": "low"
+		},
+		"Ring Mail": {
+			"priority": "low"
+		},
+		"Chain Mail": {
+			"priority": "low"
+		},
+		"Splint Armor": {
+			"priority": "low"
+		},
+		"Plate Armor": {
+			"priority": "low"
+		},
+		"Shield": {
+			"priority": "low"
+		},
+		"Acid (vial)": {
+			"priority": "high",
+			"alias": "Acid"
+		},
+		"Alchemist's fire (flask)": {
+			"priority": "high",
+			"alias": "Alchemist's Fire"
+		},
+		"Antitoxin (vial)": {
+			"priority": "high",
+			"alias": "Antitoxin"
+		},
+		"Ball bearings (bag of 1,000)": {
+			"priority": "high",
+			"alias": "Ball Bearings"
+		},
+		"Caltrops": {
+			"priority": "high"
+		},
+		"Grappling hook": {
+			"priority": "low"
+		},
+		"Holy water (flask)": {
+			"priority": "high",
+			"alias": "Holy Water"
+		},
+		"Hunting trap": {
+			"priority": "high"
+		},
+		"Climber's Kit": {
+			"priority": "low"
+		},
+		"Disguise Kit": {
+			"priority": "low"
+		},
+		"Forgery Kit": {
+			"priority": "low"
+		},
+		"Herbalism Kit": {
+			"priority": "low"
+		},
+		"Healer's Kit": {
+			"priority": "high"
+		},
+		"Poisoner's Kit": {
+			"priority": "low"
+		},
+		"Lamp": {
+			"priority": "low"
+		},
+		"Lantern, bullseye": {
+			"priority": "low"
+		},
+		"Lantern, hooded": {
+			"priority": "low"
+		},
+		"Lock": {
+			"priority": "low"
+		},
+		"Magnifying glass": {
+			"priority": "low"
+		},
+		"Manacles": {
+			"priority": "low"
+		},
+		"Mirror, steel": {
+			"priority": "low"
+		},
+		"Oil (flask)": {
+			"priority": "high",
+			"alias": "Oil"
+		},
+		"Poison, basic (vial)": {
+			"priority": "high",
+			"alias": "Basic Poison"
+		},
+		"Pole (10-foot)": {
+			"priority": "low",
+			"alias": "10-foot Pole"
+		},
+		"Ram, portable": {
+			"priority": "low",
+			"alias": "Portable Ram"
+		},
+		"Rope, hempen (50 feet)": {
+			"priority": "low",
+			"alias": "Hempen Rope"
+		},
+		"Rope, silk (50 feet)": {
+			"priority": "low",
+			"alias": "Silk Rope"
+		},
+		"Signal whistle": {
+			"priority": "low"
+		},
+		"Spyglass": {
+			"priority": "low"
+		},
+		"Tinderbox": {
+			"priority": "low"
+		},
+		"Torch": {
+			"priority": "low"
+		},
+		"Navigator's Tools": {
+			"priority": "low"
+		},
+		"Thieves' Tools": {
+			"priority": "high"
+		}
+	},
+	"Features": {
+		"Rage": {
+			"priority": "high"
+		},
+		"Unarmored Defense": {
+			"priority": "high"
+		},
+		"Reckless Attack": {
+			"priority": "high"
+		},
+		"Danger Sense": {
+			"priority": "high"
+		},
+		"Frenzy": {
+			"priority": "high"
+		},
+		"Fast Movement": {
+			"priority": "high"
+		},
+		"Mindless Rage": {
+			"priority": "high"
+		},
+		"Feral Instinct": {
+			"priority": "high"
+		},
+		"Brutal Critical (1 die)": {
+			"priority": "high",
+			"group": "Brutal Critical"
+		},
+		"Intimidating Presence": {
+			"priority": "high"
+		},
+		"Relentless Rage": {
+			"priority": "high"
+		},
+		"Brutal Critical (2 dice)": {
+			"priority": "high",
+			"group": "Brutal Critical"
+		},
+		"Retaliation": {
+			"priority": "high"
+		},
+		"Persistent Rage": {
+			"priority": "high"
+		},
+		"Brutal Critical (3 dice)": {
+			"priority": "high",
+			"group": "Brutal Critical"
+		},
+		"Indomitable Might": {
+			"priority": "high"
+		},
+		"Bardic Inspiration (d6)": {
+			"priority": "high",
+			"group": "Bardic Inspiration"
+		},
+		"Jack of All Trades": {
+			"priority": "high"
+		},
+		"Song of Rest (d6)": {
+			"priority": "low",
+			"group": "Song of Rest"
+		},
+		"Cutting Words": {
+			"priority": "high"
+		},
+		"Bardic Inspiration (d8)": {
+			"priority": "high",
+			"group": "Bardic Inspiration"
+		},
+		"Countercharm": {
+			"priority": "high"
+		},
+		"Song of Rest (d8)": {
+			"priority": "low",
+			"group": "Song of Rest"
+		},
+		"Bardic Inspiration (d10)": {
+			"priority": "high",
+			"group": "Bardic Inspiration"
+		},
+		"Song of Rest (d10)": {
+			"priority": "low",
+			"group": "Song of Rest"
+		},
+		"Peerless Skill": {
+			"priority": "high"
+		},
+		"Bardic Inspiration (d12)": {
+			"priority": "high",
+			"group": "Bardic Inspiration"
+		},
+		"Song of Rest (d12)": {
+			"priority": "low",
+			"group": "Song of Rest"
+		},
+		"Disciple of Life": {
+			"priority": "high"
+		},
+		"Channel Divinity (1/rest)": {
+			"priority": "high",
+			"alias": "Channel Divinity",
+			"group": "Channel Divinity"
+		},
+		"Channel Divinity: Turn Undead": {
+			"priority": "high",
+			"alias": "Turn Undead",
+			"group": "Channel Divinity"
+		},
+		"Channel Divinity: Preserve Life": {
+			"priority": "high",
+			"alias": "Preserve Life",
+			"group": "Channel Divinity"
+		},
+		"Destroy Undead (CR 1/2 or below)": {
+			"priority": "high",
+			"group": "Destroy Undead"
+		},
+		"Blessed Healer": {
+			"priority": "high"
+		},
+		"Destroy Undead (CR 1 or below)": {
+			"priority": "high",
+			"group": "Destroy Undead"
+		},
+		"Divine Strike": {
+			"priority": "high"
+		},
+		"Divine Intervention": {
+			"priority": "high"
+		},
+		"Destroy Undead (CR 2 or below)": {
+			"priority": "high",
+			"group": "Destroy Undead"
+		},
+		"Destroy Undead (CR 3 or below)": {
+			"priority": "high",
+			"group": "Destroy Undead"
+		},
+		"Destroy Undead (CR 4 or below)": {
+			"priority": "high",
+			"group": "Destroy Undead"
+		},
+		"Supreme Healing": {
+			"priority": "high"
+		},
+		"Druidic": {
+			"priority": "low"
+		},
+		"Wild Shape (CR 1/4 or below, no flying or swim speed)": {
+			"priority": "high",
+			"group": "Wild Shape"
+		},
+		"Wild Shape (CR 1/2 or below, no flying speed)": {
+			"priority": "high",
+			"group": "Wild Shape"
+		},
+		"Land's Stride": {
+			"priority": "high"
+		},
+		"Wild Shape (CR 1 or below)": {
+			"priority": "high",
+			"group": "Wild Shape"
+		},
+		"Nature's Ward": {
+			"priority": "high"
+		},
+		"Nature's Sanctuary": {
+			"priority": "high"
+		},
+		"Timeless Body": {
+			"priority": "low"
+		},
+		"Beast Spells": {
+			"priority": "high"
+		},
+		"Fighting Style": {
+			"priority": "low"
+		},
+		"Fighting Style: Archery": {
+			"priority": "high",
+			"alias": "Archery",
+			"group": "Fighting Style"
+		},
+		"Fighting Style: Defense": {
+			"priority": "high",
+			"alias": "Defense",
+			"group": "Fighting Style"
+		},
+		"Fighting Style: Dueling": {
+			"priority": "high",
+			"alias": "Dueling",
+			"group": "Fighting Style"
+		},
+		"Fighting Style: Great Weapon Fighting": {
+			"priority": "high",
+			"alias": "Great Weapon Fighting",
+			"group": "Fighting Style"
+		},
+		"Fighting Style: Protection": {
+			"priority": "high",
+			"alias": "Protection",
+			"group": "Fighting Style"
+		},
+		"Fighting Style: Two-Weapon Fighting": {
+			"priority": "high",
+			"alias": "Two-Weapon Fighting",
+			"group": "Fighting Style"
+		},
+		"Second Wind": {
+			"priority": "high"
+		},
+		"Action Surge (1 use)": {
+			"priority": "high",
+			"group": "Action Surge"
+		},
+		"Improved Critical": {
+			"priority": "high"
+		},
+		"Remarkable Athlete": {
+			"priority": "high"
+		},
+		"Indomitable (1 use)": {
+			"priority": "high",
+			"group": "Indomitable"
+		},
+		"Indomitable (2 uses)": {
+			"priority": "high",
+			"group": "Indomitable"
+		},
+		"Superior Critical": {
+			"priority": "high"
+		},
+		"Action Surge (2 uses)": {
+			"priority": "high",
+			"group": "Action Surge"
+		},
+		"Indomitable (3 uses)": {
+			"priority": "high",
+			"group": "Indomitable"
+		},
+		"Survivor": {
+			"priority": "high"
+		},
+		"Martial Arts": {
+			"priority": "high"
+		},
+		"Ki": {
+			"priority": "high"
+		},
+		"Flurry of Blows": {
+			"priority": "high"
+		},
+		"Patient Defense": {
+			"priority": "high"
+		},
+		"Step of the Wind": {
+			"priority": "high"
+		},
+		"Unarmored Movement": {
+			"priority": "high"
+		},
+		"Deflect Missiles": {
+			"priority": "high"
+		},
+		"Open Hand Technique": {
+			"priority": "high"
+		},
+		"Slow Fall": {
+			"priority": "high"
+		},
+		"Stunning Strike": {
+			"priority": "high"
+		},
+		"Ki Empowered Strikes": {
+			"priority": "high"
+		},
+		"Wholeness of Body": {
+			"priority": "high"
+		},
+		"Evasion": {
+			"priority": "high"
+		},
+		"Stillness of Mind": {
+			"priority": "high"
+		},
+		"Purity of Body": {
+			"priority": "high"
+		},
+		"Tranquility": {
+			"priority": "high"
+		},
+		"Tongue of the Sun and Moon": {
+			"priority": "low"
+		},
+		"Diamond Soul": {
+			"priority": "high"
+		},
+		"Quivering Palm": {
+			"priority": "high"
+		},
+		"Empty Body": {
+			"priority": "high"
+		},
+		"Divine Sense": {
+			"priority": "high"
+		},
+		"Lay on Hands": {
+			"priority": "high"
+		},
+		"Divine Smite": {
+			"priority": "high"
+		},
+		"Divine Health": {
+			"priority": "high"
+		},
+		"Channel Divinity": {
+			"priority": "high"
+		},
+		"Channel Divinity: Sacred Weapon": {
+			"priority": "high",
+			"alias": "Sacred Weapon",
+			"group": "Channel Divinity"
+		},
+		"Channel Divinity: Turn the Unholy": {
+			"priority": "high",
+			"alias": "Turn the Unholy",
+			"group": "Channel Divinity"
+		},
+		"Aura of Protection": {
+			"priority": "high"
+		},
+		"Aura of Devotion": {
+			"priority": "high"
+		},
+		"Aura of Courage": {
+			"priority": "high"
+		},
+		"Improved Divine Smite": {
+			"priority": "high"
+		},
+		"Cleansing Touch": {
+			"priority": "high"
+		},
+		"Purity of Spirit": {
+			"priority": "high"
+		},
+		"Holy Nimbus": {
+			"priority": "high"
+		},
+		"Favored Enemy (1 type)": {
+			"priority": "low",
+			"group": "Favored Enemy"
+		},
+		"Natural Explorer (1 terrain type)": {
+			"priority": "low",
+			"group": "Natural Explorer"
+		},
+		"Hunter's Prey: Colossus Slayer": {
+			"priority": "high",
+			"alias": "Colossus Slayer",
+			"group": "Hunter's Prey"
+		},
+		"Hunter's Prey: Giant Killer": {
+			"priority": "high",
+			"alias": "Giant Killer",
+			"group": "Hunter's Prey"
+		},
+		"Hunter's Prey: Horde Breaker": {
+			"priority": "high",
+			"alias": "Horde Breaker",
+			"group": "Hunter's Prey"
+		},
+		"Primeval Awareness": {
+			"priority": "high"
+		},
+		"Favored Enemy (2 types)": {
+			"priority": "low",
+			"group": "Favored Enemy"
+		},
+		"Natural Explorer (2 terrain types)": {
+			"priority": "low",
+			"group": "Natural Explorer"
+		},
+		"Defensive Tactics: Escape the Horde": {
+			"priority": "high",
+			"alias": "Escape the Horde",
+			"group": "Defensive Tactics"
+		},
+		"Defensive Tactics: Multiattack Defense": {
+			"priority": "high",
+			"alias": "Multiattack Defense",
+			"group": "Defensive Tactics"
+		},
+		"Defensive Tactics: Steel Will": {
+			"priority": "high",
+			"alias": "Steel Will",
+			"group": "Defensive Tactics"
+		},
+		"Natural Explorer (3 terrain types)": {
+			"priority": "low",
+			"group": "Natural Explorer"
+		},
+		"Hide in Plain Sight": {
+			"priority": "high"
+		},
+		"Multiattack: Volley": {
+			"priority": "high",
+			"alias": "Volley",
+			"group": "Multiattack"
+		},
+		"Multiattack: Whirlwind Attack": {
+			"priority": "high",
+			"alias": "Whirlwind Attack",
+			"group": "Multiattack"
+		},
+		"Favored Enemy (3 enemies)": {
+			"priority": "low",
+			"group": "Favored Enemy"
+		},
+		"Vanish": {
+			"priority": "high"
+		},
+		"Superior Hunter's Defense: Evasion": {
+			"priority": "high",
+			"alias": "Evasion",
+			"group": "Superior Hunter's Defense"
+		},
+		"Superior Hunter's Defense: Stand Against the Tide": {
+			"priority": "high",
+			"alias": "Stand Against the Tide",
+			"group": "Superior Hunter's Defense"
+		},
+		"Superior Hunter's Defense: Uncanny Dodge": {
+			"priority": "high",
+			"alias": "Uncanny Dodge",
+			"group": "Superior Hunter's Defense"
+		},
+		"Feral Senses": {
+			"priority": "high"
+		},
+		"Foe Slayer": {
+			"priority": "high"
+		},
+		"Sneak Attack": {
+			"priority": "high"
+		},
+		"Thieves' Cant": {
+			"priority": "low"
+		},
+		"Cunning Action": {
+			"priority": "high"
+		},
+		"Fast Hands": {
+			"priority": "high"
+		},
+		"Second-Story Work": {
+			"priority": "high"
+		},
+		"Uncanny Dodge": {
+			"priority": "high"
+		},
+		"Supreme Sneak": {
+			"priority": "high"
+		},
+		"Reliable Talent": {
+			"priority": "high"
+		},
+		"Use Magic Device": {
+			"priority": "high"
+		},
+		"Blindsense": {
+			"priority": "high"
+		},
+		"Slippery Mind": {
+			"priority": "high"
+		},
+		"Thief's Reflexes": {
+			"priority": "high"
+		},
+		"Elusive": {
+			"priority": "high"
+		},
+		"Stroke of Luck": {
+			"priority": "high"
+		},
+		"Draconic Resilience": {
+			"priority": "high"
+		},
+		"Font of Magic": {
+			"priority": "high"
+		},
+		"Flexible Casting: Creating Spell Slots": {
+			"priority": "high",
+			"alias": "Creating Spell Slots",
+			"group": "Flexible Casting"
+		},
+		"Flexible Casting: Converting Spell Slot": {
+			"priority": "high",
+			"alias": "Converting Spell Slot",
+			"group": "Flexible Casting"
+		},
+		"Metamagic": {
+			"priority": "high"
+		},
+		"Metamagic: Careful Spell": {
+			"priority": "high",
+			"alias": "Careful Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Distant Spell": {
+			"priority": "high",
+			"alias": "Distant Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Empowered Spell": {
+			"priority": "high",
+			"alias": "Empowered Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Extended Spell": {
+			"priority": "high",
+			"alias": "Extended Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Heightened Spell": {
+			"priority": "high",
+			"alias": "Heightened Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Quickened Spell": {
+			"priority": "high",
+			"alias": "Quickened Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Subtle Spell": {
+			"priority": "high",
+			"alias": "Subtle Spell",
+			"group": "Metamagic"
+		},
+		"Metamagic: Twinned Spell": {
+			"priority": "high",
+			"alias": "Twinned Spell",
+			"group": "Metamagic"
+		},
+		"Elemental Affinity": {
+			"priority": "high"
+		},
+		"Dragon Wings": {
+			"priority": "high"
+		},
+		"Draconic Presence": {
+			"priority": "high"
+		},
+		"Dark One's Blessing": {
+			"priority": "high"
+		},
+		"Eldritch Invocations": {
+			"priority": "high"
+		},
+		"Eldritch Invocation: Agonizing Blast": {
+			"priority": "high",
+			"alias": "Agonizing Blast",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Armor of Shadows": {
+			"priority": "high",
+			"alias": "Armor of Shadows",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Beast Speech": {
+			"priority": "high",
+			"alias": "Beast Speech",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Book of Ancient Secrets": {
+			"priority": "high",
+			"alias": "Book of Ancient Secrets",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Devil's Sight": {
+			"priority": "high",
+			"alias": "Devil's Sight",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Eldritch Sight": {
+			"priority": "high",
+			"alias": "Eldritch Sight",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Eldritch Spear": {
+			"priority": "high",
+			"alias": "Eldritch Spear",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Eyes of the Rune Keeper": {
+			"priority": "high",
+			"alias": "Eyes of the Rune Keeper",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Fiendish Vigor": {
+			"priority": "high",
+			"alias": "Fiendish Vigor",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Gaze of Two Minds": {
+			"priority": "high",
+			"alias": "Gaze of Two Minds",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Mask of Many Faces": {
+			"priority": "high",
+			"alias": "Mask of Many Faces",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Misty Visions": {
+			"priority": "high",
+			"alias": "Misty Visions",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Repelling Blast": {
+			"priority": "high",
+			"alias": "Repelling Blast",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Thief of Five Fates": {
+			"priority": "high",
+			"alias": "Thief of Five Fates",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Voice of the Chain Master": {
+			"priority": "high",
+			"alias": "Voice of the Chain Master",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Mire the Mind": {
+			"priority": "high",
+			"alias": "Mire the Mind",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: One with Shadows": {
+			"priority": "high",
+			"alias": "One with Shadows",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Sign of Ill Omen": {
+			"priority": "high",
+			"alias": "Sign of Ill Omen",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Thirsting Blade": {
+			"priority": "high",
+			"alias": "Thirsting Blade",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Bewitching Whispers": {
+			"priority": "high",
+			"alias": "Bewitching Whispers",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Dreadful Word": {
+			"priority": "high",
+			"alias": "Dreadful Word",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Sculptor of Flesh": {
+			"priority": "high",
+			"alias": "Sculptor of Flesh",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Ascendant Step": {
+			"priority": "high",
+			"alias": "Ascendant Step",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Minions of Chaos": {
+			"priority": "high",
+			"alias": "Minions of Chaos",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Otherworldly Leap": {
+			"priority": "high",
+			"alias": "Otherworldly Leap",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Whispers of the Grave": {
+			"priority": "high",
+			"alias": "Whispers of the Grave",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Lifedrinker": {
+			"priority": "high",
+			"alias": "Lifedrinker",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Chains of Carceri": {
+			"priority": "high",
+			"alias": "Chains of Carceri",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Master of Myriad Forms": {
+			"priority": "high",
+			"alias": "Master of Myriad Forms",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Visions of Distant Realms": {
+			"priority": "high",
+			"alias": "Visions of Distant Realms",
+			"group": "Eldritch Invocation"
+		},
+		"Eldritch Invocation: Witch Sight": {
+			"priority": "high",
+			"alias": "Witch Sight",
+			"group": "Eldritch Invocation"
+		},
+		"Pact of the Chain": {
+			"priority": "high"
+		},
+		"Pact of the Blade": {
+			"priority": "high"
+		},
+		"Pact of the Tome": {
+			"priority": "high"
+		},
+		"Dark One's Own Luck": {
+			"priority": "high"
+		},
+		"Fiendish Resilience": {
+			"priority": "high"
+		},
+		"Hurl Through Hell": {
+			"priority": "high"
+		},
+		"Sculpt Spells": {
+			"priority": "high"
+		},
+		"Potent Cantrip": {
+			"priority": "high"
+		},
+		"Empowered Evocation": {
+			"priority": "high"
+		},
+		"Overchannel": {
+			"priority": "high"
+		}
+	},
+	"Rule-Sections": {
+		"The Order of Combat": {
+			"priority": "low"
+		},
+		"Movement and Position": {
+			"priority": "beginner"
+		},
+		"Actions in Combat": {
+			"priority": "beginner"
+		},
+		"Making an Attack": {
+			"priority": "beginner"
+		},
+		"Cover": {
+			"priority": "high"
+		},
+		"Damage and Healing": {
+			"priority": "beginner"
+		},
+		"Mounted Combat": {
+			"priority": "high"
+		},
+		"Underwater Combat": {
+			"priority": "high"
+		},
+		"Ability Scores and Modifiers": {
+			"priority": "beginner"
+		},
+		"Advantage and Disadvantage": {
+			"priority": "high"
+		},
+		"Proficiency Bonus": {
+			"priority": "beginner"
+		},
+		"Ability Checks": {
+			"priority": "low"
+		},
+		"Using Each Ability": {
+			"priority": "low"
+		},
+		"Saving Throws": {
+			"priority": "beginner"
+		},
+		"Time": {
+			"priority": "low"
+		},
+		"Movement": {
+			"priority": "low"
+		},
+		"The Environment": {
+			"priority": "low"
+		},
+		"Resting": {
+			"priority": "low"
+		},
+		"What Is a Spell?": {
+			"priority": "beginner"
+		},
+		"Casting a Spell": {
+			"priority": "high"
+		},
+		"Objects": {
+			"priority": "high"
+		},
+		"Poisons": {
+			"priority": "low"
+		},
+		"Attunement": {
+			"priority": "low"
+		},
+		"Wearing and Wielding Items": {
+			"priority": "low"
+		},
+		"Activating an Item": {
+			"priority": "low"
+		},
+		"Sentient Magic Items": {
+			"priority": "low"
+		},
+		"Traps": {
+			"priority": "low"
+		}
+	},
+	"Traits": {
+		"Darkvision": {
+			"priority": "high"
+		},
+		"Dwarven Resilience": {
+			"priority": "high"
+		},
+		"Stonecunning": {
+			"priority": "low"
+		},
+		"Dwarven Toughness": {
+			"priority": "low"
+		},
+		"Fey Ancestry": {
+			"priority": "high"
+		},
+		"Trance": {
+			"priority": "low"
+		},
+		"Lucky": {
+			"priority": "high"
+		},
+		"Brave": {
+			"priority": "high"
+		},
+		"Halfling Nimbleness": {
+			"priority": "high"
+		},
+		"Naturally Stealthy": {
+			"priority": "high"
+		},
+		"Draconic Ancestry": {
+			"priority": "low"
+		},
+		"Draconic Ancestry (Black)": {
+			"priority": "low",
+			"alias": "Black Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Blue)": {
+			"priority": "low",
+			"alias": "Blue Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Brass)": {
+			"priority": "low",
+			"alias": "Brass Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Bronze)": {
+			"priority": "low",
+			"alias": "Bronze Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Copper)": {
+			"priority": "low",
+			"alias": "Copper Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Gold)": {
+			"priority": "low",
+			"alias": "Gold Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Green)": {
+			"priority": "low",
+			"alias": "Green Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Red)": {
+			"priority": "low",
+			"alias": "Red Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (Silver)": {
+			"priority": "low",
+			"alias": "Silver Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Draconic Ancestry (White)": {
+			"priority": "low",
+			"alias": "White Dragon Ancestry",
+			"group": "Draconic Ancestry"
+		},
+		"Breath Weapon": {
+			"priority": "high"
+		},
+		"Damage Resistance": {
+			"priority": "high"
+		},
+		"Gnome Cunning": {
+			"priority": "high"
+		},
+		"Artificer's Lore": {
+			"priority": "low"
+		},
+		"Tinker": {
+			"priority": "low"
+		},
+		"Relentless Endurance": {
+			"priority": "high"
+		},
+		"Savage Attacks": {
+			"priority": "high"
+		},
+		"Hellish Resistance": {
+			"priority": "high"
+		},
+		"Infernal Legacy": {
+			"priority": "low"
+		}
+	},
+	"Weapon-Properties": {
+		"Finesse": {
+			"priority": "high"
+		},
+		"Light": {
+			"priority": "high"
+		},
+		"Loading": {
+			"priority": "high"
+		},
+		"Reach": {
+			"priority": "high"
+		},
+		"Versatile": {
+			"priority": "high"
+		}
+	}
+}

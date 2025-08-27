@@ -1,0 +1,174 @@
+@import 'tailwindcss';
+
+/* D&D Sourcebook Theme */
+:root {
+	--dnd-background: #907a59;
+	--dnd-card-fallback: #e8dcc6;
+	--dnd-text: #120029;
+	--dnd-link: #ff8a00;
+}
+
+/* Global background */
+body {
+	background-color: var(--dnd-background);
+	color: var(--dnd-text);
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Links */
+a {
+	color: var(--dnd-link);
+}
+
+a:hover {
+	color: #e6a855;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Berkshire Swash', 'Georgia', 'Times New Roman', serif;
+	color: var(--dnd-text);
+	font-weight: semibold;
+}
+.card h1 {
+	@apply text-4xl;
+}
+.card h2 {
+	@apply text-xl;
+}
+
+/* Button base styles */
+.btn-base {
+	@apply rounded px-4 py-2 font-medium text-white transition-colors duration-200;
+	font-family: 'Georgia', 'Times New Roman', serif;
+	border: 1px solid #6b7280;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-small {
+	@apply rounded px-3 py-1 text-sm font-medium text-white transition-colors duration-200;
+	font-family: 'Georgia', 'Times New Roman', serif;
+	border: 1px solid #6b7280;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Button variants */
+.btn-primary {
+	@apply bg-emerald-600 hover:bg-emerald-700 disabled:bg-gray-400;
+}
+
+.btn-secondary {
+	@apply bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400;
+}
+
+.btn-danger {
+	@apply bg-red-500 hover:bg-red-600 disabled:bg-gray-400;
+}
+
+.btn-neutral {
+	@apply bg-gray-500 hover:bg-gray-600 disabled:bg-gray-400;
+}
+
+/* Text utility classes */
+.text-muted {
+	color: rgba(18, 0, 41, 0.6);
+}
+
+.text-muted-dark {
+	color: rgba(18, 0, 41, 0.7);
+}
+
+.text-body {
+	color: var(--dnd-text);
+}
+
+.text-success {
+	@apply text-green-700;
+}
+
+.text-danger {
+	color: #dc2626;
+}
+
+.text-warning {
+	@apply text-orange-600;
+}
+
+.text-info {
+	@apply text-blue-600;
+}
+
+.text-accent {
+	color: #dc2626;
+}
+
+/* Card/container components */
+.card {
+	@apply rounded-lg p-6;
+	background: var(--dnd-card-fallback) url('/gmb_background.jpg');
+	background-size: cover;
+	background-position: center;
+	color: var(--dnd-text);
+	box-shadow:
+		0 10px 25px -3px rgba(0, 0, 0, 0.3),
+		0 4px 6px -2px rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(120, 108, 84, 0.4);
+}
+
+/* Card headers with horizontal rules - target the container div */
+.card-header {
+	@apply mb-4 flex w-full items-center justify-between text-lg;
+	border-bottom: 1px solid rgba(18, 0, 41, 0.3);
+}
+
+/* Notification/alert components */
+.alert {
+	@apply rounded p-3 text-sm;
+}
+
+.alert-success {
+	@apply bg-green-100 text-green-700;
+}
+
+.alert-danger {
+	@apply bg-red-100 text-red-700;
+}
+
+.alert-info {
+	@apply bg-blue-100 text-blue-600;
+}
+
+/* Message/item containers */
+.message-item {
+	@apply rounded p-3 text-sm;
+}
+
+.message-box {
+	@apply overflow-y-auto rounded border border-gray-200 p-2;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Clear button styles */
+.clear-button {
+	color: var(--dnd-link);
+}
+
+.clear-button:hover {
+	text-decoration: underline;
+}
+
+.clear-button.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* Input field styles */
+.input-box {
+	@apply flex-1 rounded border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none;
+	background-color: rgba(255, 255, 255, 0.5);
+}
