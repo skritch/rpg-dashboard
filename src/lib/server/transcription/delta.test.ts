@@ -3,9 +3,9 @@ import { firstValueFrom, Observable, of } from 'rxjs';
 import { map, toArray } from 'rxjs/operators';
 import { deltaLogic } from '../streaming/logic';
 import type { TD, WindowMeta, WT } from '../streaming/types';
-import type { TranscriptDelta } from '$lib/shared/transcripts';
 import { join } from 'path';
 import { loadJson1 } from '$lib/shared/utils';
+import type { DeltaRow } from '$lib/shared/files';
 
 describe('deltaLogic', () => {
 	it('should process transcription results and produce correct deltas', async () => {
@@ -13,7 +13,7 @@ describe('deltaLogic', () => {
 			join(__dirname, 'fixtures', 'transcription_results.json1')
 		) as WT[];
 
-		const deltas = loadJson1(join(__dirname, 'fixtures', 'deltas.json1')) as TranscriptDelta[];
+		const deltas = loadJson1(join(__dirname, 'fixtures', 'deltas.json1')) as DeltaRow[];
 
 		// Create input stream with transcription results paired with audio windows
 		const inputStream: Observable<WT> = of(
@@ -27,8 +27,8 @@ describe('deltaLogic', () => {
 		);
 
 		const expectedText = deltas.map((d) => ({
-			overwrite: d.overwrite,
-			segments: d.segments.map((seg) => ({ text: seg.text }))
+			overwrite: d.delta.overwrite,
+			segments: d.delta.segments.map((seg) => ({ text: seg.text }))
 		}));
 
 		// Process through deltaLogic pipeline

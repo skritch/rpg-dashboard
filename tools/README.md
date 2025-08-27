@@ -30,14 +30,20 @@ To QA the transcription/segment-merging algorithm, use the Marimo notebook `tool
 ```
 # Run as editable notebook
 uv run marimo edit tools/viz-transcripts.py
+
 # Render notebook as HTML
 uv run marimo export html tools/viz-transcripts.py -o transcripts.html
+
 # Or just serve the transcript visualization as HTML directly
 uv run marimo run tools/viz-transcripts.py
 ```
 
 Pass a directory (`.data/transcripts/C1E001-3600-3660/`) or just a dataset name (`C1E001-3600-3660`) as an an argument to any of these to
-run the analysis of that transcription output in particular.
+run the analysis of that transcription output in particular, e.g.:
+
+```
+uv run marimo run tools/viz-transcripts.py src/lib/server/transcription/fixtures/
+```
 
 JQ command to remove useless fields from transcript results:
 
@@ -51,7 +57,6 @@ on_ratio, .seek, .temperature, .words))' > transcription_results_cleaned.json1
 
 ## Building the D&D Database
 
-TODO: make this a single script.
 TODO: the source isn't complete for 2024 edition, find something else, or, pass the SRD pdf through an LLM.
 
 - `generate-dnd-database.ts`

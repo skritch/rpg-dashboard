@@ -1,6 +1,5 @@
 import { AUDIO_CONFIG } from '$lib/shared/AudioConfig';
 
-// TODO: verbose? Just define type inline?
 interface Config {
 	sampleRate: number;
 	bufferSeconds: number;

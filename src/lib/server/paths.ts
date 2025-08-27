@@ -31,7 +31,7 @@ export function outputPathsFromEnv(name: string): TranscriptOutputPaths {
 	const dataDir = path.join(getDataDir(), 'transcripts', name);
 	return {
 		baseDir: dataDir,
-		input: path.join(dataDir, 'input'),
+		input: path.join(dataDir, 'input.wav'),
 		transcriptionResults: path.join(dataDir, 'transcription_results.json1'),
 		deltas: path.join(dataDir, 'deltas.json1'),
 		transcript: path.join(dataDir, 'transcript.txt'),

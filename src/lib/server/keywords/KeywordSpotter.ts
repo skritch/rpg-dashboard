@@ -41,7 +41,8 @@ export class KeywordSpotter {
 			// Pad the text with spaces so we can match only keywords with spaces on both sides.
 			' ' + text.toLowerCase().replace(/[^a-zA-Z\s]/g, '') + ' '
 		);
-		// TODO: the indices of these matches will not be the indices in the original string
+		// TODO: the indices of these matches will not be the indices in the original string,
+		// so they're useless for highlighting the match.
 		const acMatches = acResultToMatches(acr);
 
 		// 2. Fuzzy search, probably

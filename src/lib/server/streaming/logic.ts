@@ -85,7 +85,7 @@ export const windowLogic: StreamOp<AudioSegment, WavWithWindow> = pipe(
 export function transcriptionLogic(getService: () => TranscriptionService) {
 	return mapAsyncOrdered(async (w: WavWithWindow): Promise<RawTranscriptionResult> => {
 		try {
-			// TODO: consider passing an earlier transcript in the `prompt`.
+			// TBD: pass an earlier transcript, or some useful spelling hints, in the `prompt`.
 			const t = await getService().transcribe(w.wav, 'audio/wav');
 			return { meta: w.meta, t: t, success: true };
 		} catch (error) {
@@ -111,8 +111,6 @@ export const deltaLogic: StreamOp<WT, DeltaState> = pipe(
 				(seg) => seg.endMs >= alignedSegs[0].startMs + tolMs
 			);
 
-			// TODO: don't ever crash here.
-			// Note: quite brittle, because it depends on audio durations and whisper return timestamps lining up.
 			const delta = computeDelta(stateSuffix, alignedSegs);
 
 			if (delta.overwrite > stateSuffix.length) {
@@ -161,7 +159,7 @@ export function keywordSpottingLogic(
 			return {
 				type: 'keyword_match',
 				keywords: kwEntries,
-				// TODO probably send in the previous delta
+				// TBD probably send in the previous delta
 				// Or assign this to a location in the deltas/transcripts in some way,
 				// rather than using an index into this string.
 				text: text,

@@ -4,7 +4,7 @@ import { parseWSServerMessage, type WSClientMessage } from '$lib/shared/messages
 import { wsStatus, client, wsMessages } from '$lib/client/stores/ws.svelte';
 import { clientSettings } from './stores/settings.svelte';
 
-// TODO: Should these be properties of the wsClient?
+// TBD: Should these be properties of the wsClient?
 let rws: ReconnectingWebSocket | null = null;
 let onDisconnectCallback: (() => void) | null = null;
 const wsBaseUrl = import.meta.env.VITE_WS_URL || 'ws://localhost:3001';

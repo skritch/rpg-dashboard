@@ -37,10 +37,39 @@ export function offsetSegments(
 		});
 }
 
+function isMonotonic(segs: TranscriptionSegment[]): boolean {
+	const tolMs = 200;
+
+	for (let i = 0; i < segs.length; i++) {
+		const seg = segs[i];
+
+		// Check that endMs >= startMs
+		if (seg.endMs < seg.startMs) {
+			return false;
+		}
+
+		// startMs and endMs should each be increasing,
+		if (i > 0 && seg.startMs < segs[i - 1].startMs) {
+			return false;
+		}
+		if (i > 0 && seg.endMs < segs[i - 1].endMs) {
+			return false;
+		}
+		// one segment's start can overlap the next a little
+		if (i > 0 && seg.startMs < segs[i - 1].endMs - tolMs) {
+			return false;
+		}
+	}
+	return true;
+}
+
 /**
  * Given a new set of transcript segments and full transcript state so far,
  * create a TranscriptDelta representing how many segments to overwrite and keep,
  * to be consumed by the frontend.
+ *
+ * Note that this expects `stateSuffix` to contain only segments which overlap
+ * newSegs, i.e. whose endTime > newSegs[0].startTime.
  *
  *
  *	For example, if our segments look like
@@ -48,13 +77,9 @@ export function offsetSegments(
  *	new:         0' 1' 2'
  *	we might want to end up with
  *			   0  1  2  1' 2'
- *
- * TODO: both state and newSegs should have start and end times which
- * are monotonic. This probably won't work if they don't.
- * TODO: don't actually error on invalid inputs, do something else.
  */
 export function computeDelta(
-	stateSegs: TranscriptionSegment[],
+	stateSuffix: TranscriptionSegment[],
 	newSegs: TranscriptionSegment[]
 ): TranscriptDelta {
 	const tolMs = 200;
@@ -62,48 +87,64 @@ export function computeDelta(
 	// console.log(`New: \n  ${newSegs.map((seg) => JSON.stringify({startMs: seg.startMs, endMs: seg.endMs, text: seg.text})).join('\n  ')}\n`);
 
 	// If either is empty, just return the new.
-	if (stateSegs.length === 0 || newSegs.length === 0) {
+	if (stateSuffix.length === 0 || newSegs.length === 0) {
 		return { overwrite: 0, segments: newSegs };
 	}
 
-	// We can end at the same time, but we can't end before.
-	const endOffsetMs = newSegs[newSegs.length - 1].endMs - stateSegs[stateSegs.length - 1].endMs;
-	if (endOffsetMs < -tolMs) {
-		console.log(
-			`Out of order segments ${stateSegs[stateSegs.length - 1].endMs} to ${newSegs[newSegs.length - 1].endMs}`
+	// Check assumptions, no-op if any are violated.
+	if (stateSuffix[0].endMs < newSegs[0].startMs) {
+		console.warn(
+			`State suffix doesn't overlap new segments: ${stateSuffix[0].endMs} < ${newSegs[0].startMs}`
 		);
-		// Return nothing.
+		return { overwrite: 0, segments: [] };
+	}
+	if (!isMonotonic(stateSuffix)) {
+		console.warn(
+			`State suffix not monotonic: ${JSON.stringify(stateSuffix.map((seg) => ({ startMs: seg.startMs, endMs: seg.endMs })))}`
+		);
+		return { overwrite: 0, segments: [] };
+	}
+	if (!isMonotonic(newSegs)) {
+		console.warn(`New segments not monotonic`);
+		return { overwrite: 0, segments: [] };
+	}
+	// We can end at the same time, but we can't end before.
+	const endOffsetMs = newSegs[newSegs.length - 1].endMs - stateSuffix[stateSuffix.length - 1].endMs;
+	if (endOffsetMs < -tolMs) {
+		console.warn(
+			`Out of order segments ${stateSuffix[stateSuffix.length - 1].endMs} to ${newSegs[newSegs.length - 1].endMs}`
+		);
 		return { overwrite: 0, segments: [] };
 	}
 
 	// Realistically this case covers the first few seconds of the stream
-	if (stateSegs.length === 1) {
+	if (stateSuffix.length === 1) {
 		// If we overlap the suffix entirely, just replace it.
 		// State:  |------|
 		// New:    |---------|----...
 		// Return: |---------|----..., overwrite=1
-		if (newSegs[0].startMs < stateSegs[0].startMs + tolMs) {
+		if (newSegs[0].startMs < stateSuffix[0].startMs + tolMs) {
 			return { overwrite: 1, segments: newSegs };
 		}
 
-		// We already know we don't start *after* it, because we checked overlapMs above.
-		// Therefore our first new segment must start during state's single one.
-		// Drop all new segments which overlap state's single segment and return what's left.
+		// Our first new segment must start during or after state's single one.
+		// Drop all new segments which overlap state's single segment and return the rest.
 		// State:  |------|
 		// New:       |-----|---|--...
+		// (or):            |---|--...
 		// Return:          |---|--..., overwrite=0
 		return {
 			overwrite: 0,
-			segments: newSegs.filter((seg) => seg.startMs > stateSegs[0].endMs - tolMs)
+			segments: newSegs.filter((seg) => seg.startMs > stateSuffix[0].endMs - tolMs)
 		};
 	}
 
-	// If we got here, then state has at least two segments which overlap newSegs.
+	// If we got here, then state has at least two segments.
 	//
 	// First try this: step backwards through both state and new until we find
 	// two segments that line up pretty well. Chop off the end of state from that
 	// point on.
-	// TODO: limit how far back this can go. Maybe half the window length.
+	// TBD:  limit how far back this can go. Maybe half the window length.
 	// TBD:  this method requires a high tolerance to avoid going crazy,
 	//       but the others like a lower tol. Maybe use two separate params.
 	// TBD:  this might handle the other cases well enough.
@@ -112,17 +153,17 @@ export function computeDelta(
 	// New:         |---|--|-----|----|--|-----|
 	// Return:             |-----|----|--|-----| , overwrite=2
 
-	let i = stateSegs.length - 1;
+	let i = stateSuffix.length - 1;
 	let j = newSegs.length - 1;
 	while (true) {
-		if (Math.abs(newSegs[j].startMs - stateSegs[i].startMs) < tolMs) {
+		if (Math.abs(newSegs[j].startMs - stateSuffix[i].startMs) < tolMs) {
 			return {
-				overwrite: stateSegs.length - i,
+				overwrite: stateSuffix.length - i,
 				segments: newSegs.slice(j)
 			};
 		} else if (i == 0 || j == 0) {
 			break;
-		} else if (newSegs[j].startMs > stateSegs[i].startMs) {
+		} else if (newSegs[j].startMs > stateSuffix[i].startMs) {
 			j--;
 		} else {
 			i--;
@@ -132,7 +173,7 @@ export function computeDelta(
 	// Fallback to something simple: drop the last seg of the state.
 	// Return all new segs which start > that.
 	const segsToInsert = newSegs.filter(
-		(seg) => seg.startMs + tolMs > stateSegs[stateSegs.length - 1].startMs
+		(seg) => seg.startMs + tolMs > stateSuffix[stateSuffix.length - 1].startMs
 	);
 
 	// If there are none, newSegs must end in one long segment which

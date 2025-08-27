@@ -6,9 +6,6 @@ export const AUDIO_CONFIG = {
 	dropSeconds: 2, // Drop audio segments shorter than this.
 	bitsPerSample: 16,
 
-	// TODO: if we allow variable-sized buffers, or leave it up to the client,
-	// a lot of the audio logic will have to change.
-
 	// Derived values for convenience
 	get bufferSampleCount() {
 		return Math.floor(this.bufferSeconds * this.sampleRate);

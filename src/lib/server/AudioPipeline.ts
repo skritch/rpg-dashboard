@@ -91,7 +91,7 @@ export class AudioPipeline {
 		// 2. Transcribe
 
 		this.audioSegments$ = this.input$.pipe(
-			// Write raw PCA data to a file. TODO: wrap in .wav?
+			// Write raw PCA data to a file
 			tapToFile(filePaths.input, (audio) => Buffer.from(audio), wavHeader),
 			parseLogic,
 			shareReplay(shareReplayConfig)
